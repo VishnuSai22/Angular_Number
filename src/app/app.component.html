@@ -1,0 +1,31 @@
+<div>
+   <h1 class="app-title">Guess Me!</h1>
+   <div class="container">
+     <h1 class="h-title">Welcome to the number game</h1>
+     <input
+     type="number"
+     placeholder="Enter a number here"
+     name="input_num" [(ngModel)]="input_num">
+      <button class="add-btn" (click)="input()">Confirm here</button>
+   </div>
+
+   <div class =display>
+      <h2>Status :</h2>
+      <div ng-switch="this.diff">
+            <div ng-switch-when=1>
+               <h1 style="color: green;text-align: center;size: 10px;">Correct</h1>
+            </div>   
+            <div ng-switch-when=2>
+               <h1 style="color: red;text-align: center;size: 10px;">Hot</h1>
+            </div>
+            <div ng-switch-when=3>
+               <h1 style="color: orange;text-align: center;size: 10px;">Warm</h1>
+            </div>
+            <div ng-switch-when=4>
+               <h1 style="color: cadetblue;text-align: center;size: 10px;">Cold</h1>
+            </div>
+         </div>         
+   </div>
+
+</div>   
+
